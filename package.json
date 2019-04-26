@@ -1,0 +1,20 @@
+{
+  "name": "intro_to_iot",
+  "version": "1.0.0",
+  "description": "learning how to make web apps with Node.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hickery",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chart.js": "^2.8.0",
+    "dotenv": "^7.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.5.3",
+    "semantic-ui": "^2.4.2"
+  }
+}
