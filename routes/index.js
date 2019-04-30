@@ -1,10 +1,11 @@
 var	express		= require('express'),
-	db 		= require('../models'),
+	db 		    = require('../models'),
 	router		= express.Router();
 
 
 router.get('/',(req, res) => {
     var setting;
+    
 	db.Settings.findOne({})
 	.then( function(result){
         setting = result;
@@ -99,9 +100,9 @@ router.post('/configure', (req, res) => {
 		res.send(err);
 	});
 });
-
+/*
 router.get('/seed/:temp/:hum/:bright', (req, res) => {
-    var seed = {
+   var seed = {
         temperature: req.params.temp,
         humidity: req.params.hum,
         brightness: req.params.bright
@@ -138,5 +139,5 @@ router.get('/seedStats', (req, res) => {
 	.catch( function(err) {
 		res.send(err);
 	});
-});
+}); */
 module.exports = router;
