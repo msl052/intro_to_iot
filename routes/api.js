@@ -1,9 +1,9 @@
 var express         = require('express'),
     router          = express.Router(),
     db              = require('../models'),
-    dataHelpers     = require('../helpers/data');
-    //statHelpers     = require('../helpers/statisitics'),
-    //settingsHelpers = require('../helpers/settings');
+    dataHelpers     = require('../helpers/data'),
+    statHelpers     = require('../helpers/statisitics'),
+    settingsHelpers = require('../helpers/settings');
 
 /******** sensor readings **********/
 
@@ -11,7 +11,7 @@ router.route('/data')
     .get(dataHelpers.getData)
     .post(dataHelpers.createData)
     .delete(dataHelpers.deleteData);
-/*
+
 router.route('/data/:id')
     .get(dataHelpers.getOneData)
     .put(dataHelpers.editData)
@@ -23,8 +23,8 @@ router.route('/statistics')
     .delete(statHelpers.resetStats);
 
 router.route('/settings')
-    .get(settingsHelpers.getData)
-    .put(settingsHelpers.editData);
-*/
+    .get(settingsHelpers.getSettings)
+    .put(settingsHelpers.editSettings);
+
 module.exports = router;
 
