@@ -2,7 +2,7 @@ var express         = require('express'),
     router          = express.Router(),
     db              = require('../models'),
     dataHelpers     = require('../helpers/data'),
-    statHelpers     = require('../helpers/statisitics'),
+    statHelpers     = require('../helpers/statistics'),
     settingsHelpers = require('../helpers/settings');
 
 /******** sensor readings **********/
