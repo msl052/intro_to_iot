@@ -1,7 +1,7 @@
 var db = require('../models');
 
 exports.getSettings = function(req, res) {
-    db.Stats.find()
+    db.Settings.findOne()
     .then( function(settings) {
         res.json(settings);
     })
