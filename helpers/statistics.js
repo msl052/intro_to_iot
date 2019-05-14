@@ -30,7 +30,7 @@ exports.resetStats = function(req, res) {
 		'timeInDry': 0,
 		'timeInHumid': 0,
 		'timeOn': 0,
-		'timeTotal': 0
+		'timeTotal': 1
     }
     db.Stats.findOneAndUpdate({}, blank, {'new': true, upsert: true})
     .then( function(wipedStats) {
