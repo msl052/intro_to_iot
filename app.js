@@ -3,7 +3,7 @@ var	express		= require('express'),
 	app		= express();
 
 var 	indexRoutes 	 = require('./routes/index'),
-        apiRoutes        = require('./routes/api')
+        apiRoutes        = require('./routes/api');
 
 app.set('port', (process.env.PORT || 3000));
 app.set('view engine', 'ejs');
